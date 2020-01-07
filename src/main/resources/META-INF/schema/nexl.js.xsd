@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            xmlns="http://www.nexl-js.com/schema/nexl"
+            targetNamespace="http://www.nexl-js.com/schema/nexl"
+            elementFormDefault="qualified">
+
+	<xsd:element name="nexl">
+		<xsd:complexType>
+			<xsd:choice minOccurs="0" maxOccurs="unbounded">
+				<xsd:element ref="nexl"/>
+			</xsd:choice>
+			<xsd:attribute name="id" type="xsd:ID"/>
+			<xsd:attribute name="name" use="required" type="xsd:string"/>
+			<xsd:attribute name="url" use="required" type="xsd:string"/>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>o
