@@ -14,4 +14,4 @@
 			<xsd:attribute name="url" use="required" type="xsd:string"/>
 		</xsd:complexType>
 	</xsd:element>
-</xsd:schema>o
+</xsd:schema>
