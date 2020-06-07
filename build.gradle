@@ -5,13 +5,10 @@ apply from: 'maven-push.gradle'
 
 buildscript {
     repositories {
-
+        jcenter()
         mavenCentral()
+//        maven { url "https://oss.sonatype.org/content/repositories/snapshots" }
 
-//        maven {
-//
-//            url = "https://oss.sonatype.org/content/repositories/snapshots"
-//        }
         maven {
             url = "https://plugins.gradle.org/m2/"
         }
@@ -45,7 +42,7 @@ dependencies {
 
 
 group = 'com.nexl-js'
-version = '1.0.0'
+version = '1.0.0-SNAPSHOT'
 description = 'Spring Nexl Js'
 sourceCompatibility = '1.8'
 
